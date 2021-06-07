@@ -7,14 +7,6 @@ const actions = {
   LOGOUT_SUCCESS: 'LOGOUT_SUCCESS',
   LOGOUT_ERR: 'LOGOUT_ERR',
 
-  REGISTER_BEGIN: 'REGISTER_BEGIN',
-  REGISTER_SUCCESS: 'REGISTER_SUCCESS',
-  REGISTER_ERR: 'REGISTER_ERR',
-
-  USER_LOADING: 'REGISTER_BEGIN',
-  USER_LOADED: 'USER_LOADED',
-  AUTH_ERR: 'REGISTER_ERR',
-
   loginBegin: () => {
     return {
       type: actions.LOGIN_BEGIN,
@@ -51,45 +43,6 @@ const actions = {
   logoutErr: err => {
     return {
       type: actions.LOGOUT_ERR,
-      err,
-    };
-  },
-
-  registerBegin: () => {
-    return {
-      type: actions.REGISTER_BEGIN,
-    };
-  },
-
-  registerSuccess: data => {
-    return {
-      type: actions.REGISTER_SUCCESS,
-      data,
-    };
-  },
-
-  registerErr: err => {
-    return {
-      type: actions.REGISTER_ERR,
-      err,
-    };
-  },
-
-  userLoading: () => {
-    return {
-      type: actions.USER_LOADING,
-    };
-  },
-  userLoaded: data => {
-    return {
-      type: actions.USER_LOADED,
-      data,
-    };
-  },
-
-  authErr: err => {
-    return {
-      type: actions.AUTH_ERR,
       err,
     };
   },

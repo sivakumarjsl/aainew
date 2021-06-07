@@ -39,7 +39,6 @@ const SignIn = () => {
     return(<Redirect to='/admin' />)
   }
 
-  history.push("/admin")
   return (
     <AuthWrapper>
       <p className="auth-notice">

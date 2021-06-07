@@ -1,14 +1,12 @@
+import Cookies from 'js-cookie';
 import actions from './actions';
 
-const { LOGIN_BEGIN, LOGIN_SUCCESS, LOGIN_ERR, LOGOUT_BEGIN, LOGOUT_SUCCESS, LOGOUT_ERR, REGISTER_BEGIN, REGISTER_SUCCESS, REGISTER_ERR, USER_LOADED, USER_LOADING, AUTH_ERR } = actions;
+const { LOGIN_BEGIN, LOGIN_SUCCESS, LOGIN_ERR, LOGOUT_BEGIN, LOGOUT_SUCCESS, LOGOUT_ERR } = actions;
 
 const initState = {
-  // login: Cookies.get('logedIn'),
+  login: Cookies.get('logedIn'),
   loading: false,
   error: null,
-  isAuthenticated: null,
-  user: null,
-  token: localStorage.getItem('token'),
 };
 
 /**
@@ -18,41 +16,37 @@ const initState = {
 const AuthReducer = (state = initState, action) => {
   const { type, data, err } = action;
   switch (type) {
-    case USER_LOADING:
     case LOGIN_BEGIN:
-    case REGISTER_BEGIN:
+      return {
+        ...state,
+        loading: true,
+      };
+    case LOGIN_SUCCESS:
+      return {
+        ...state,
+        login: data,
+        loading: false,
+      };
+    case LOGIN_ERR:
+      return {
+        ...state,
+        error: err,
+        loading: false,
+      };
     case LOGOUT_BEGIN:
       return {
         ...state,
         loading: true,
       };
-    case USER_LOADED:
-      return {
-        ...state,
-        isAuthenticated: true,
-        loading: false,
-        user: data,
-      };
-    case LOGIN_SUCCESS:
-    case REGISTER_SUCCESS:
-      localStorage.setItem('token', data.token);
-      return {
-        ...state,
-        ...data,
-        isAuthenticated: true,
-        loading: false,
-      };
     case LOGOUT_SUCCESS:
-    case LOGIN_ERR:
-    case LOGOUT_ERR:
-    case REGISTER_ERR:
-    case AUTH_ERR:
-      localStorage.removeItem('token');
       return {
         ...state,
-        token: null,
-        user: null,
-        isAuthenticated: false,
+        login: data,
+        loading: false,
+      };
+    case LOGOUT_ERR:
+      return {
+        ...state,
         error: err,
         loading: false,
       };
