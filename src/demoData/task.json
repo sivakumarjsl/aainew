@@ -1,0 +1,52 @@
+[
+    {
+      "id": 1,
+      "title": "Dashboard design stucture",
+      "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.",
+      "favourite": false,
+      "completed": false
+    },
+    {
+        "id": 2,
+        "title": "Dashboard Layout prototype",
+        "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry text of the simply dummy",
+        "favourite": false,
+        "completed": true
+    },
+    {
+        "id": 3,
+        "title": "StrikingDash RTL Update",
+        "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry text of the simply dummy",
+        "favourite": false,
+        "completed": false
+    },
+    {
+        "id": 4,
+        "title": "Dashboard Content Update",
+        "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry text of the simply dummy",
+        "favourite": false,
+        "completed": false
+    },
+    {
+        "id": 5,
+        "title": "Dashboard Design Creation",
+        "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry text of the simply dummy",
+        "favourite": false,
+        "completed": true
+    },
+    {
+        "id": 6,
+        "title": "Managing Other Task",
+        "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry text of the simply dummy",
+        "favourite": false,
+        "completed": false
+    },
+    {
+        "id": 7,
+        "title": "Animation Css Practise",
+        "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry text of the simply dummy",
+        "favourite": false,
+        "completed": true
+    }
+]
+  

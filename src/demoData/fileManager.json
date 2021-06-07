@@ -1,0 +1,82 @@
+[
+    {
+        "key": "fd1",
+        "title": "Design",
+        "path": "desing",     
+        "className": "active",
+        "type": "folder",
+        "children": [
+            {
+                "key": "fd1-fd1",
+                "title": "Directorist",
+                "path": "design/directorist",
+                "img": "pdf.png",
+                "type": "folder",
+                "size": "1000",
+                "children": [
+                    {
+                        "key": "fd1-fd1-fl1",
+                        "title": "directorist.xd",
+                        "type": "file",
+                        "size": "1000"
+                    }
+                ]
+            },
+            {
+                "key": "fd1-fd2",
+                "title": "StrikingDash",
+                "path": "design/strikingDash",
+                "className": "",
+                "type": "folder",
+                "children": [
+                    {
+                        "key": "fd1-fd2-fl1",
+                        "title": "strikingDash.xd",
+                        "type": "file",
+                        "size": "1000",
+                        "isLeaf":true
+                    }
+                ]
+            },
+            {
+                "key": "fd1-fd3",
+                "title": "DRestaurant",
+                "path": "Design/dRestaurant",
+                "className": "",
+                "type": "folder",
+                "children": [
+                    {
+                        "key": "fd1-fd3-fl1",
+                        "title": "dRestaurant.xd",
+                        "type": "file",
+                        "size": "1000",
+                        "isLeaf":true
+                    }
+                ]
+            },
+            {
+                "key": "fd1-fd4",
+                "title": "designStrategy.pdf",
+                "className": "",
+                "type": "file",
+                "isLeaf": true
+            }
+        ]
+    },
+    {
+        "key": "fd2",
+        "title": "Prototypes",
+        "path": "Prototypes",
+        "className": "",
+        "type": "folder",
+        "children": [
+            {
+                "key": "fd2-fl1",
+                "title": "strikingDash.pdf",
+                "type": "file",
+                "size": "10000",
+                "isLeaf": true
+            }
+        ]
+    }
+]
